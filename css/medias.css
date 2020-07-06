@@ -1,5 +1,22 @@
 @media (min-width: 1200px) {
-	* {
-		font-size: 22px
-	}
+  * {
+      font-size: 22px
+  }
+}
+
+@media (min-width: 1320px) {
+  #slogan .images img {
+    opacity: 0
+  }
+  #slogan .section-title {
+    padding-bottom: 0 !important;
+  }
+  #slogan .section-title h1 {
+    margin: 0
+  }
+  #slogan .section-title img {
+    display: block;
+    margin: 0 auto;
+    margin-top: -1.5rem;
+  }
 }
