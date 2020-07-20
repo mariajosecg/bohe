@@ -79,7 +79,7 @@
 
 @media (max-width: 576px) { 
   #new-products .row, #categories .row {
-    padding: 0 5rem
+    padding: 0 1rem
   }
   .product-card .only-price {
     display: none;
