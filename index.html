@@ -25,7 +25,7 @@
 	<script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
-	<nav class="py-3">
+	<nav class="py-3 desktop-navbar">
 		<div class="row mx-0">
 			<div class="col-5 d-flex align-items-center justify-content-between">
 				<div class="input-wrapper d-flex align-items-center">
@@ -41,15 +41,15 @@
 				</div>
 			</div>
 			<div class="col-2 brand-box">
-				<a href="/" class="d-flex">
+				<a href="index.html" class="d-flex">
 					<img src="images/logo_bohe.svg" width="60%">
 					<!-- <span>Accesorios</span> -->
 				</a>
 			</div>
 			<div class="col-5 d-flex justify-content-between align-items-center">
 				<div>
-					<a href="#" class="link mx-3">Blog</a>
-					<a href="#" class="link mx-3">Contáctanos</a>
+					<a href="blog.html" class="link mx-3">Blog</a>
+					<a href="contact_us.html" class="link mx-3">Contáctanos</a>
 				</div>
 				<div class="w-30 text-right">
 					<a href="#" class="cart-link">
@@ -57,6 +57,22 @@
 						<button class="bg-danger">2</button>
 					</a>
 				</div>
+			</div>
+		</div>
+	</nav>
+	<nav class="py-3 mobile-navbar px-3">
+		<div class="d-flex justify-content-between align-items-center">
+			<a href="index.html" class="d-flex">
+				<img src="images/logo_bohe.svg" width="100rem">
+			</a>
+			<i class="fa fa-bars toggle-menu"></i>
+		</div>
+		<div class="menu-collapse py-3 none">
+			<div class="d-flex flex-column align-items-center">
+				<a href="#" class="link mx-3">Nosotros</a>
+				<a href="#" class="link mx-3">Look book</a>
+				<a href="blog.html" class="link mx-3">Blog</a>
+				<a href="contact_us.html" class="link mx-3">Contáctanos</a>
 			</div>
 		</div>
 	</nav>
@@ -77,26 +93,29 @@
 			<img src="images/brown-arrow.png" width="10%">
 		</div>
 		<div class="row">
-			<div class="col-md-4 col-sm-4 col-lg-3">
+			<div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
 				<div class="card product-card custom-card px-3 mb-4 rounded-0">
-					<a href="#">
+					<a href="product.html">
 						<div class="card-header py-0 px-0 bg-white border-0">
 							<img src="images/Fotoproducto-Bohe-2019-248.jpg" width="100%">
 							<div class="card-title">
 								<h5 class="text-center">Brazalete Aroma Color</h5>
+								<h5 class="font-weight-bold text-center mobile">$8.00</h5>
 							</div>
 						</div>
 					</a>
 					<div class="card-footer bg-white px-0 mx-3">
 						<div class="only-price">
-							<h2 class="font-weight-bold text-center price">$8.00</h2>
+							<h5 class="font-weight-bold text-center price">$8.00</h5>
 						</div>
-						<!-- <div class="price-hover d-flex align-items-center justify-content-between">
-							<h2 class="font-weight-bold text-center price mb-0">$8.00</h2>
-							<button class="btn btn-cart">
-								<img src="images/Add-Cart-icon.png" width="55%">
-							</button>
-						</div> -->
+						<div class="mobile">
+							<div class="d-flex align-items-center justify-content-center py-2">
+								<button class="btn btn-primary rounded-0 w-50">
+									<img src="images/Add-Cart-icon.png" width="10%">
+									<span class="ml-2">Añadir a carrito</span>
+								</button>
+							</div>
+						</div>
 						<div class="price-hover d-flex align-items-center justify-content-between">
 							<button class="btn btn-primary rounded-0">
 								<img src="images/Add-Cart-icon.png" width="15%">
@@ -107,19 +126,28 @@
 				</div>
 			</div>
 
-			<div class="col-md-4 col-sm-4 col-lg-3">
+			<div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
 				<div class="card product-card custom-card px-3 mb-4 rounded-0">
-					<a href="#">
+					<a href="product.html">
 						<div class="card-header py-0 px-0 bg-white border-0">
 							<img src="images/Fotoproducto-Bohe-2019-103.jpg" width="100%">
 							<div class="card-title">
 								<h5 class="text-center">Brazalete Aroma Color</h5>
+								<h5 class="font-weight-bold text-center mobile">$8.00</h5>
 							</div>
 						</div>
 					</a>
 					<div class="card-footer bg-white px-0 mx-3">
 						<div class="only-price">
-							<h2 class="font-weight-bold text-center price">$8.00</h2>
+							<h5 class="font-weight-bold text-center price">$8.00</h5>
+						</div>
+						<div class="mobile">
+							<div class="d-flex align-items-center justify-content-center py-2">
+								<button class="btn btn-primary rounded-0 w-50">
+									<img src="images/Add-Cart-icon.png" width="10%">
+									<span class="ml-2">Añadir a carrito</span>
+								</button>
+							</div>
 						</div>
 						<div class="price-hover d-flex align-items-center justify-content-between">
 							<button class="btn btn-primary rounded-0">
@@ -131,19 +159,28 @@
 				</div>
 			</div>
 
-			<div class="col-md-4 col-sm-4 col-lg-3">
+			<div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
 				<div class="card product-card custom-card px-3 mb-4 rounded-0">
-					<a href="#">
+					<a href="product.html">
 						<div class="card-header py-0 px-0 bg-white border-0">
 							<img src="images/Fotoproducto-Bohe-2019-166.jpg" width="100%">
 							<div class="card-title">
 								<h5 class="text-center">Brazalete Aroma Color</h5>
+								<h5 class="font-weight-bold text-center mobile">$8.00</h5>
 							</div>
 						</div>
 					</a>
 					<div class="card-footer bg-white px-0 mx-3">
 						<div class="only-price">
-							<h2 class="font-weight-bold text-center price">$8.00</h2>
+							<h5 class="font-weight-bold text-center price">$8.00</h5>
+						</div>
+						<div class="mobile">
+							<div class="d-flex align-items-center justify-content-center py-2">
+								<button class="btn btn-primary rounded-0 w-50">
+									<img src="images/Add-Cart-icon.png" width="10%">
+									<span class="ml-2">Añadir a carrito</span>
+								</button>
+							</div>
 						</div>
 						<div class="price-hover d-flex align-items-center justify-content-between">
 							<button class="btn btn-primary rounded-0">
@@ -155,19 +192,28 @@
 				</div>
 			</div>
 
-			<div class="col-md-4 col-sm-4 col-lg-3">
+			<div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
 				<div class="card product-card custom-card px-3 mb-4 rounded-0">
-					<a href="#">
+					<a href="product.html">
 						<div class="card-header py-0 px-0 bg-white border-0">
 							<img src="images/Fotoproducto-Bohe-2019-183.jpg" width="100%">
 							<div class="card-title">
 								<h5 class="text-center">Brazalete Aroma Color</h5>
+								<h5 class="font-weight-bold text-center mobile">$8.00</h5>
 							</div>
 						</div>
 					</a>
 					<div class="card-footer bg-white px-0 mx-3">
 						<div class="only-price">
-							<h2 class="font-weight-bold text-center price">$8.00</h2>
+							<h5 class="font-weight-bold text-center price">$8.00</h5>
+						</div>
+						<div class="mobile">
+							<div class="d-flex align-items-center justify-content-center py-2">
+								<button class="btn btn-primary rounded-0 w-50">
+									<img src="images/Add-Cart-icon.png" width="10%">
+									<span class="ml-2">Añadir a carrito</span>
+								</button>
+							</div>
 						</div>
 						<div class="price-hover d-flex align-items-center justify-content-between">
 							<button class="btn btn-primary rounded-0">
@@ -179,19 +225,28 @@
 				</div>
 			</div>
 
-			<div class="col-md-4 col-sm-4 col-lg-3">
+			<div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
 				<div class="card product-card custom-card px-3 mb-4 rounded-0">
-					<a href="#">
+					<a href="product.html">
 						<div class="card-header py-0 px-0 bg-white border-0">
 							<img src="images/Fotoproducto-Bohe-2019-190.jpg" width="100%">
 							<div class="card-title">
 								<h5 class="text-center">Brazalete Aroma Color</h5>
+								<h5 class="font-weight-bold text-center mobile">$8.00</h5>
 							</div>
 						</div>
 					</a>
 					<div class="card-footer bg-white px-0 mx-3">
 						<div class="only-price">
-							<h2 class="font-weight-bold text-center price">$8.00</h2>
+							<h5 class="font-weight-bold text-center price">$8.00</h5>
+						</div>
+						<div class="mobile">
+							<div class="d-flex align-items-center justify-content-center py-2">
+								<button class="btn btn-primary rounded-0 w-50">
+									<img src="images/Add-Cart-icon.png" width="10%">
+									<span class="ml-2">Añadir a carrito</span>
+								</button>
+							</div>
 						</div>
 						<div class="price-hover d-flex align-items-center justify-content-between">
 							<button class="btn btn-primary rounded-0">
@@ -203,19 +258,28 @@
 				</div>
 			</div>
 
-			<div class="col-md-4 col-sm-4 col-lg-3">
+			<div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
 				<div class="card product-card custom-card px-3 mb-4 rounded-0">
-					<a href="#">
+					<a href="product.html">
 						<div class="card-header py-0 px-0 bg-white border-0">
 							<img src="images/Fotoproducto-Bohe-2019-184.jpg" width="100%">
 							<div class="card-title">
 								<h5 class="text-center">Brazalete Aroma Color</h5>
+								<h5 class="font-weight-bold text-center mobile">$8.00</h5>
 							</div>
 						</div>
 					</a>
 					<div class="card-footer bg-white px-0 mx-3">
 						<div class="only-price">
-							<h2 class="font-weight-bold text-center price">$8.00</h2>
+							<h5 class="font-weight-bold text-center price">$8.00</h5>
+						</div>
+						<div class="mobile">
+							<div class="d-flex align-items-center justify-content-center py-2">
+								<button class="btn btn-primary rounded-0 w-50">
+									<img src="images/Add-Cart-icon.png" width="10%">
+									<span class="ml-2">Añadir a carrito</span>
+								</button>
+							</div>
 						</div>
 						<div class="price-hover d-flex align-items-center justify-content-between">
 							<button class="btn btn-primary rounded-0">
@@ -227,19 +291,28 @@
 				</div>
 			</div>
 
-			<div class="col-md-4 col-sm-4 col-lg-3">
+			<div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
 				<div class="card product-card custom-card px-3 mb-4 rounded-0">
-					<a href="#">
+					<a href="product.html">
 						<div class="card-header py-0 px-0 bg-white border-0">
 							<img src="images/Fotoproducto-Bohe-2019-252.jpg" width="100%">
 							<div class="card-title">
 								<h5 class="text-center">Brazalete Aroma Color</h5>
+								<h5 class="font-weight-bold text-center mobile">$8.00</h5>
 							</div>
 						</div>
 					</a>
 					<div class="card-footer bg-white px-0 mx-3">
 						<div class="only-price">
-							<h2 class="font-weight-bold text-center price">$8.00</h2>
+							<h5 class="font-weight-bold text-center price">$8.00</h5>
+						</div>
+						<div class="mobile">
+							<div class="d-flex align-items-center justify-content-center py-2">
+								<button class="btn btn-primary rounded-0 w-50">
+									<img src="images/Add-Cart-icon.png" width="10%">
+									<span class="ml-2">Añadir a carrito</span>
+								</button>
+							</div>
 						</div>
 						<div class="price-hover d-flex align-items-center justify-content-between">
 							<button class="btn btn-primary rounded-0">
@@ -251,19 +324,28 @@
 				</div>
 			</div>
 
-			<div class="col-md-4 col-sm-4 col-lg-3">
+			<div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
 				<div class="card product-card custom-card px-3 mb-4 rounded-0">
-					<a href="#">
+					<a href="product.html">
 						<div class="card-header py-0 px-0 bg-white border-0">
 							<img src="images/Fotoproducto-Bohe-2019-191.jpg" width="100%">
 							<div class="card-title">
 								<h5 class="text-center">Brazalete Aroma Color</h5>
+								<h5 class="font-weight-bold text-center mobile">$8.00</h5>
 							</div>
 						</div>
 					</a>
 					<div class="card-footer bg-white px-0 mx-3">
 						<div class="only-price">
-							<h2 class="font-weight-bold text-center price">$8.00</h2>
+							<h5 class="font-weight-bold text-center price">$8.00</h5>
+						</div>
+						<div class="mobile">
+							<div class="d-flex align-items-center justify-content-center py-2">
+								<button class="btn btn-primary rounded-0 w-50">
+									<img src="images/Add-Cart-icon.png" width="10%">
+									<span class="ml-2">Añadir a carrito</span>
+								</button>
+							</div>
 						</div>
 						<div class="price-hover d-flex align-items-center justify-content-between">
 							<button class="btn btn-primary rounded-0">
@@ -275,14 +357,16 @@
 				</div>
 			</div>
 		</div>
-		<button class="btn btn-primary rounded-0 px-5 mx-auto">
-			<span class="display-5">Ver Todos</span>
-		</button>
+		<a href="products.html" class="decoration-none">
+			<button class="btn btn-primary rounded-0 px-5 mx-auto">
+				<span class="display-6">Ver Todos</span>
+			</button>
+		</a>
 	</section>
 	<section id="slogan" class="py-5 my-4">
 		<div class="container text-center">
 			<div class="section-title text-center py-4">
-				<h1 class="text-white">Somos de Alma Libre</h1>
+				<h3 class="text-white">Somos de Alma Libre</h3>
 				<img src="images/arrow-2-white.png" width="10%">
 			</div>
 			<div class="images left">
@@ -307,9 +391,9 @@
 			<img src="images/brown-arrow.png" width="10%">
 		</div>
 		<div class="row">
-			<div class="col-md-4 col-sm-4 col-lg-3">
+			<div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
 				<div class="card category-card custom-card mb-4 rounded-0">
-					<a href="#">
+					<a href="products.html">
 						<div class="card-header py-0 px-0 bg-white border-0">
 							<img src="images/category-1.jpg" width="100%">
 							<div class="card-title py-4 mb-0">
@@ -321,9 +405,9 @@
 				</div>
 			</div>
 
-			<div class="col-md-4 col-sm-4 col-lg-3">
+			<div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
 				<div class="card category-card custom-card mb-4 rounded-0">
-					<a href="#">
+					<a href="products.html">
 						<div class="card-header py-0 px-0 bg-white border-0">
 							<img src="images/category-2.jpg" width="100%">
 							<div class="card-title py-4 mb-0">
@@ -335,9 +419,9 @@
 				</div>
 			</div>
 
-			<div class="col-md-4 col-sm-4 col-lg-3">
+			<div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
 				<div class="card category-card custom-card mb-4 rounded-0">
-					<a href="#">
+					<a href="products.html">
 						<div class="card-header py-0 px-0 bg-white border-0">
 							<img src="images/category-3.jpg" width="100%">
 							<div class="card-title py-4 mb-0">
@@ -349,9 +433,9 @@
 				</div>
 			</div>
 
-			<div class="col-md-4 col-sm-4 col-lg-3">
+			<div class="col-md-4 col-sm-6 col-lg-3 col-xs-12">
 				<div class="card category-card custom-card mb-4 rounded-0">
-					<a href="#">
+					<a href="products.html">
 						<div class="card-header py-0 px-0 bg-white border-0">
 							<img src="images/category-4.jpg" width="100%">
 							<div class="card-title py-4 mb-0">
@@ -363,19 +447,21 @@
 				</div>
 			</div>
 		</div>
-		<button class="btn btn-primary rounded-0 px-5 mx-auto mt-4">
-			<span class="display-5">Ver Todas</span>
-		</button>
+		<a href="categories.html" class="decoration-none">
+			<button class="btn btn-primary rounded-0 px-5 mx-auto mt-4">
+				<span class="display-6">Ver Todas</span>
+			</button>
+		</a>
 	</section>
 	<section id="slogan-2" class="py-5 mt-4">
 		<div class="container py-4">
 			<div class="row">
 				<div class="col-7">
-					<h2 class="text-white text-center">Sé moderna, clásica<br>y actual con:</h2>	
+					<h3 class="text-white text-center">Sé moderna, clásica<br>y actual con:</h3>	
 				</div>
 				<div class="col-5">
 					<div class="brand-box">
-						<img src="images/logo-white.png" width="45%">
+						<img src="images/logo-white.png" width="35%">
 						<span>Accesorios</span>
 					</div>
 				</div>
@@ -385,10 +471,10 @@
 	<footer class="container py-3">
 		<div class="row">
 			<div class="col">
-				<img src="images/logo_bohe.svg" width="15%">
+				<img src="images/logo_bohe.svg" width="15%" class="logo">
 			</div>
 			<div class="col-3 arrow">
-				<img src="images/arrow.png" width="40%">
+				<img src="images/arrow.png" width="40%" class="arrow">
 			</div>
 			<div class="col d-flex align-items-center justify-content-end">
 				<p class="mb-0 mr-4">Siguenos:</p>
