@@ -25,40 +25,73 @@
 		<script type="text/javascript" src="js/main.js"></script>
 	</head>
 	<body>
-		<nav class="py-3">
-			<div class="row mx-0">
-				<div class="col-5 d-flex align-items-center justify-content-between">
-					<div class="input-wrapper d-flex align-items-center">
-						<i class="fa fa-search"></i>
-						<form method="POST" class="ml-1">
-							<input type="text" name="search" class="form-control h-100" required="" id="search" autocomplete="off">
-							<label for="search" class="mb-0">Buscar</label>
-						</form>
-					</div>
-					<div>
-						<a href="#" class="link mx-3">Nosotros</a>
-						<a href="#" class="link mx-3">Look book</a>
-					</div>
-				</div>
-				<div class="col-2 brand-box">
-					<a href="index.html" class="d-flex">
-						<img src="images/logo_bohe.svg" width="60%">
-					</a>
-				</div>
-				<div class="col-5 d-flex justify-content-between align-items-center">
-					<div>
-						<a href="blog.html" class="link mx-3">Blog</a>
-						<a href="contact_us.html" class="link mx-3">Contáctanos</a>
-					</div>
-					<div class="w-30 text-right">
-						<a href="#" class="cart-link">
-							<img src="images/cart-icon.png" width="30%">
-							<button class="bg-danger">2</button>
-						</a>
-					</div>
-				</div>
-			</div>
-		</nav>
+		<nav class="py-3 desktop-navbar">
+      <div class="row mx-0">
+        <div class="col-5 d-flex align-items-center justify-content-between">
+          <div class="input-wrapper d-flex align-items-center">
+            <i class="fa fa-search"></i>
+            <form method="POST" class="ml-1">
+              <input type="text" name="search" class="form-control h-100" required="" id="search" autocomplete="off">
+              <label for="search" class="mb-0">Buscar</label>
+            </form>
+          </div>
+          <div>
+            <a href="#" class="link mx-3">Nosotros</a>
+            <a href="look_book.html" class="link mx-3">Look book</a>
+          </div>
+        </div>
+        <div class="col-2 brand-box">
+          <a href="index.html" class="d-flex">
+            <img src="images/logo_bohe.svg" width="60%">
+            <!-- <span>Accesorios</span> -->
+          </a>
+        </div>
+        <div class="col-5 d-flex justify-content-between align-items-center">
+          <div>
+            <a href="blog.html" class="link mx-3">Blog</a>
+            <a href="contact_us.html" class="link mx-3">Contáctanos</a>
+          </div>
+          <div class="w-30 text-right">
+            <a href="#" class="cart-link">
+              <img src="images/cart-icon.svg" width="20%">
+              <button class="bg-danger d-flex align-items-center justify-content-center">
+                <span>2</span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav class="py-3 mobile-navbar px-3">
+      <div class="row">
+        <a href="index.html" class="col-2">
+          <img src="images/logo_bohe.svg" width="100rem">
+        </a>
+        <div class="col-6"></div>
+        <a href="#" class="cart-link pr-3 col-2 d-flex align-items-center">
+          <img src="images/cart-icon.svg" width="80%">
+          <button class="bg-danger d-flex align-items-center justify-content-center">
+            <span>2</span>
+          </button>
+        </a>
+        <button class="toggle-menu border-0 bg-white col-2">
+          <i class="fa fa-bars"></i>
+        </button>
+      </div>
+      <div class="menu-collapse py-3 none">
+        <div class="d-flex flex-column align-items-center">
+          <a href="#" class="link mx-3">Nosotros</a>
+          <a href="look_book.html" class="link mx-3">Look book</a>
+          <a href="blog.html" class="link mx-3">Blog</a>
+          <a href="contact_us.html" class="link mx-3">Contáctanos</a>
+          <form method="POST" class="py-2 d-flex align-items-center w-100 justify-content-center" id="search-form">
+            <i class="fa fa-search"></i>
+            <input type="text" name="search" class="form-control h-100" required="" id="search" autocomplete="off" placeholder="Buscar">
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="mask menu-mask d-none"></div>
 		<div id="product-view" class="border-top">
 			<div class="d-flex align-items-center justify-content-center bg-dark categories-nav">
 				<a href="" class="px-3 text-white semi-bold py-3 active">Hippie Chic</a>

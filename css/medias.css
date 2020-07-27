@@ -4,6 +4,19 @@
   }
 }
 
+@media (max-width: 1100px) {
+  #slogan .section-title img {
+    display: block;
+    position: absolute;
+    bottom: 24%;
+    left: 46%;
+    width: 7%;
+  }
+  #slogan .images img {
+    opacity: 0
+  }
+}
+
 @media (min-width: 1320px) {
   #slogan .images img {
     opacity: 0
@@ -15,15 +28,19 @@
     margin: 0
   }
   #slogan .section-title img {
-    display: block;
     margin: 0 auto;
-    margin-top: -1.5rem;
+    margin-top: -2rem;
+    display: block;
   }
 }
 
 @media (max-width: 1200px) {
   * {
     font-size: 18px
+  }
+  nav .cart-link button {
+    right: 2%;
+    top: .2rem;
   }
 }
 
@@ -58,6 +75,36 @@
   .banner {
     padding-top: 90px
   }
+  nav .cart-link {
+    justify-content: flex-end;
+    padding-right: .6rem !important;
+  }
+  nav .cart-link img{
+    width: 22%;
+  }
+  nav .cart-link button {
+    top: 0.5rem;
+  }
+  nav .cart-link button span{
+    font-size: .6rem;
+  }
+  nav .cart-link button {
+    width: 1rem;
+    height: 1rem;
+  }
+  #search-form {
+    position: relative;
+  }
+  #search-form .fa-search {
+    position: absolute;
+    z-index: 2;
+    left: 30%;
+  }
+  #search-form input {
+    font-size: 1.2rem;
+    width: 30%;
+    text-align: center;
+  }
 }
 
 @media (max-width: 767px) {
@@ -75,8 +122,19 @@
   #slogan-2 .brand-box span {
     right: 62%
   }
+  #slogan .section-title img {
+    bottom: 28%;
+  }
+  nav .cart-link img {
+    width: 25%;
+  }
 }
 
+@media (max-width: 676px) {
+  nav .cart-link img {
+    width: 30%;
+  }
+}
 @media (max-width: 576px) { 
   #new-products .row, #categories .row {
     padding: 0 1rem
@@ -114,11 +172,31 @@
   #slogan-2 .brand-box span {
     right: 42%;
   }
+
+  .mobile-navbar .cart-link {
+    position: relative;
+  }
+  nav .cart-link img {
+    width: 35%;
+  }
+  #slogan .section-title img {
+    bottom: 26%;
+    left: 45%;
+    width: 9%;
+  }
 }
 
 @media (max-width: 500px) { 
   footer .arrow {
     display: none;
+  }
+  #slogan .section-title img {
+    bottom: 26%;
+    left: 44%;
+    width: 11%;
+  }
+  nav .cart-link img {
+    width: 50%;
   }
 } 
 
@@ -127,10 +205,21 @@
     right: 41%;
     font-size: .6rem
   }
+  nav .cart-link img {
+    width: 65%;
+  }
 } 
 
 @media (max-width: 350px) { 
   #slogan-2 .brand-box span {
     display: none;
+  }
+  #slogan .section-title img {
+    bottom: 28%;
+    left: 42%;
+    width: 13%;
+  }
+  nav .cart-link img {
+    width: 80%;
   }
 } 

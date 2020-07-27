@@ -18,6 +18,10 @@ nav .link {
   margin-bottom: 1px;
 }
 
+nav .link.active {
+  color: #C89567;
+}
+
 nav .link:hover {
   color: #C89567;
   border-bottom: 1px solid #C89567;
@@ -52,19 +56,34 @@ nav .social-network img {
 nav .cart-link a {
   position: relative;
 }
+nav .cart-link button span{
+  font-family: sans-serif;
+  font-size: .5rem;
+  height: 80%
+}
 nav .cart-link button {
   border: 0;
   border-radius: 50%;
   position: absolute;
-  right: 3%;
-  font-size: .6rem;
-  font-family: sans-serif;
-  bottom: 50%;
+  right: 1%;
   font-weight: 600;
-  width: 1rem;
-  height: 1rem;
+  width: .9rem;
+  height: .9rem;
   outline: none;
-  color: #ffffff
+  color: #ffffff;
+  top: .4rem
+}
+
+.toggle-menu i.fa-times {
+  font-size: 1.5rem;
+}
+
+.toggle-menu i {
+  transition: 1s
+}
+
+.toggle-menu:focus {
+  outline: none;
 }
 
 .banner {
@@ -183,7 +202,7 @@ nav .cart-link button {
 }
 
 .btn-primary, .btn-primary:hover, .btn-primary:focus {
-  z-index: 2;
+  z-index: 1;
   padding: .5rem;
   display: flex;
   justify-content: center;
@@ -225,8 +244,11 @@ nav .cart-link button {
 
 /* Slogan section */
 
-#slogan .section-title img {
+#slogan .section-title img{
   display: none;
+}
+#slogan {
+  position: relative;
 }
 
 #slogan, #slogan-2 {
@@ -320,7 +342,7 @@ nav .cart-link button {
   transform: translateY(-20px);
 }
 
-.input-wrapper input, .input-wrapper input:focus {
+.input-wrapper input, .input-wrapper input:focus, #search-form input{
   border: none;
   padding: 0;
   outline: none;
@@ -329,7 +351,7 @@ nav .cart-link button {
   border-color: #ebebeb
 }
 
-.input-wrapper input:focus {
+.input-wrapper input:focus, #search-form input {
   border-bottom: 1px solid #ebebeb;
   border-radius: 0;
 }
@@ -371,7 +393,7 @@ nav .cart-link button {
 
 footer {
   background-color: #ffffff;
-  z-index: 2;
+  /*z-index: 2;*/
   position: relative;
 }
 
@@ -591,6 +613,11 @@ input::-webkit-inner-spin-button {
   opacity: 1;
 }
 
+.menu-mask {
+  z-index: 2;
+  position: fixed;
+}
+
 .name-input {
     grid-area: name-input
 }
@@ -631,8 +658,9 @@ input::-webkit-inner-spin-button {
   left: 0;
   right: 0;
   background: white;
+  transition: .3s;
   z-index: 2;
-  transition: .3s
+  visibility: hidden;
 }
 
 .menu-collapse a {
@@ -642,6 +670,10 @@ input::-webkit-inner-spin-button {
 .menu-collapse.none {
   opacity: 0
 }
+.menu-collapse.open {
+  z-index: 2;
+  visibility: visible;
+}
 
 .menu-collapse.open {
   opacity: 1
@@ -649,4 +681,45 @@ input::-webkit-inner-spin-button {
 
 .mobile {
   display: none;
+}
+
+.text-brown {
+  color: #C89567;
+}
+
+.look-book-card .card-header {
+  position: relative;
+}
+
+.look-book-card a:hover .card-header .mask {
+  opacity: 0
+}
+
+#look-book-view .modal {
+  z-index: 2
+}
+
+#look-book-view .modal .close{
+  position: absolute;
+  color: white;
+  z-index: 2;
+  right: 0.5rem;
+  opacity: 0.8
+}
+
+#look-book-view .modal .close:focus {
+  outline: none;
+}
+
+.modal-backdrop {
+  z-index: 1
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  width: 1rem;
+  height: 1rem
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 5%;
 }

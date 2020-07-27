@@ -47,7 +47,38 @@ $(document).ready(function(){
 	  }
 	});
 
-	$(document).on('click','.toggle-menu',function(){
-		$('.menu-collapse').toggleClass('open')
+	let $menu = $('.menu-collapse')
+	let $icon = $('.toggle-menu').find('i')
+	let $menuMask = $('.menu-mask')
+
+	let toggleMenu = () => {
+		$menu.toggleClass('open')
+
+		if ($menu.hasClass('open')) {
+			$icon.removeClass('fa-bars').addClass('fa-times')
+			$menuMask.removeClass('d-none')
+		} else {
+			$icon.removeClass('fa-times').addClass('fa-bars')
+			$menuMask.addClass('d-none')
+		}
+	}
+
+	// $(document).on('click','.toggle-menu',function(){
+	// 	toggleMenu()
+ //  });
+
+	// $(document).on('click','.menu-mask',function(){
+	// 	toggleMenu()
+	// });
+
+	$('.menu-mask, .toggle-menu').click(function () {
+		toggleMenu()
+	})
+
+
+  $('.look-banner').slick({
+		infinite: true,
+    prevArrow:"<div class='slick-prev'></div>",
+    nextArrow:"<div class='slick-next'></div>"
   });
 });
