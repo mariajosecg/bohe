@@ -81,4 +81,10 @@ $(document).ready(function(){
     prevArrow:"<div class='slick-prev'></div>",
     nextArrow:"<div class='slick-next'></div>"
   });
+
+ //  $('.dropdown').hover(function() {
+	//   $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+	// }, function() {
+	//   $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+	// });
 });

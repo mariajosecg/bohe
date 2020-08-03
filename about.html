@@ -36,7 +36,7 @@
 						</form>
 					</div>
 					<div>
-						<a href="about.html" class="link mx-3">Nosotros</a>
+						<a href="about.html" class="link mx-3 active">Nosotros</a>
 						<a href="look_book.html" class="link mx-3">Look book</a>
 					</div>
 				</div>
@@ -48,7 +48,7 @@
 				</div>
 				<div class="col-5 d-flex justify-content-between align-items-center">
 					<div class="d-flex">
-						<a href="blog.html" class="link mx-3 active">Blog</a>
+						<a href="blog.html" class="link mx-3">Blog</a>
 						<div class="dropdown">
 							<a type="button" class="link mx-3 dropdown-toggle decoration-none">Accesorios</a>
 							<div class="dropdown-menu dropdown-menu-right">
@@ -89,9 +89,9 @@
 			</div>
 			<div class="menu-collapse py-3 none">
 				<div class="d-flex flex-column align-items-center">
-					<a href="about.html" class="link mx-3">Nosotros</a>
+					<a href="about.html" class="link mx-3 active">Nosotros</a>
 					<a href="look_book.html" class="link mx-3">Look book</a>
-					<a href="blog.html" class="link mx-3 active">Blog</a>
+					<a href="blog.html" class="link mx-3">Blog</a>
 					<a class="link mx-3 decoration-none">Accesorios</a>
 					<form method="POST" class="py-2 d-flex align-items-center w-100 justify-content-center" id="search-form">
 						<i class="fa fa-search"></i>
@@ -100,131 +100,164 @@
 				</div>
 			</div>
 		</nav>
-		<div class="mask menu-mask d-none"></div>
-		<div id="blog-view" class="blog">
+		<div id="about-view">
 			<div class="d-flex align-items-center justify-content-center bg-dark">
 				<div class="section-title text-center py-3 black-title">
-					<h3 class="text-white">Blog</h3>
-					<img src="images/brown-arrow.png" width="60%">
+					<h3 class="text-white">Nuestra Marca</h3>
+					<img src="images/brown-arrow.png" width="45%">
 				</div>
 			</div>
-			<div class="sidebar p-3">
-				<p class="mb-0">Buscar publicaciones:</p>
-				<form method="POST" class="my-3">
-					<input type="text" name="search" class="form-control h-100" autocomplete="off" placeholder="¿Qué buscas?">
-				</form>
-				<div class="tags">
-					<a href="blog.html"><span class="badge badge-custom">Belleza</span></a>
-					<a href="blog.html"><span class="badge badge-custom">Hippie</span></a>
-					<a href="blog.html"><span class="badge badge-custom">Amor</span></a>
-					<a href="blog.html"><span class="badge badge-custom">Tendencia</span></a>
-				</div>
-				<div class="categories pt-4">
-					<p class="mb-1">Categorias:</p>
-					<a href="blog.html"><span class="badge badge-custom active">Todas</span></a>
-					<a href="blog.html"><span class="badge badge-custom">Hippie Chic</span></a>
-					<a href="blog.html"><span class="badge badge-custom">Bohemio</span></a>
-				</div>
-			</div>
-			<div class="blog-content p-4">
-				<div class="container">
-					<div class="row px-5">
-						<a class="col-6 mb-4 decoration-none" href="post.html">
-							<div class="card post-card text-dark">
-								<div class="card-header p-0">
-									<div class="img-box">
-										<img src="images/banner-1.jpg" class="w-100">
-										<div class="mask" class="w-100"></div>
-										<span class="badge badge-custom">Belleza</span>
-									</div>
-								</div>
-								<div class="card-body pb-0">
-									<div class="card-title d-flex justify-content-between">
-										<h5 class="font-weight-bold">Belleza única</h5>
-										<div>
-											<p class="float-right">12/02/20</p>
-										</div>
-									</div>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua...</p>
-								</div>
-							</div>
-						</a>
-						<a class="col-6 mb-4 decoration-none" href="post.html">
-							<div class="card post-card text-dark">
-								<div class="card-header p-0">
-									<div class="img-box">
-										<img src="images/banner-2.jpg" class="w-100">
-										<div class="mask" class="w-100"></div>
-										<span class="badge badge-custom">Tendencia</span>
-									</div>
-								</div>
-								<div class="card-body pb-0">
-									<div class="card-title d-flex justify-content-between">
-										<h5 class="font-weight-bold">Próximos estrenos</h5>
-										<div>
-											<p class="float-right">12/02/20</p>
-										</div>
-									</div>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua...</p>
-								</div>
-							</div>
-						</a>
-						<a class="col-6 mb-4 decoration-none" href="post.html">
-							<div class="card post-card text-dark">
-								<div class="card-header p-0">
-									<div class="img-box">
-										<img src="images/banner-3.jpg" class="w-100">
-										<div class="mask" class="w-100"></div>
-										<span class="badge badge-custom">Belleza</span>
-									</div>
-								</div>
-								<div class="card-body pb-0">
-									<div class="card-title d-flex justify-content-between">
-										<h5 class="font-weight-bold">Dia de la Mujer</h5>
-										<div>
-											<p class="float-right">12/02/20</p>
-										</div>
-									</div>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua...</p>
-								</div>
-							</div>
-						</a>
-						<a class="col-6 mb-4 decoration-none" href="post.html">
-							<div class="card post-card text-dark">
-								<div class="card-header p-0">
-									<div class="img-box">
-										<img src="images/banner-1.jpg" class="w-100">
-										<div class="mask" class="w-100"></div>
-										<span class="badge badge-custom">Hippie</span>
-									</div>
-								</div>
-								<div class="card-body pb-0">
-									<div class="card-title d-flex justify-content-between">
-										<h5 class="font-weight-bold">Hippie Chic</h5>
-										<div>
-											<p class="float-right">12/02/20</p>
-										</div>
-									</div>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua...</p>
-								</div>
-							</div>
-						</a>
+			<div class="container mt-3">
+				<div class="row">
+					<div class="col d-flex align-items-center p-2 justify-content-center">
+						<div class="border-left pl-2">
+							<h3 class="text-brown">Misión</h3>
+							<p class="mb-0">
+								Convertir a bohé en la opción preferida de la
+								mujer para lucir un estilo diferente con
+								accesorios que resaltan la frescura y
+								dinamismo de su ser.
+							</p>
+						</div>
+					</div>
+					<div class="col d-flex align-items-center m-5 p-2 with-background">
+						<div class="border-left pl-2">
+							<h3 class="text-brown">Visión</h3>
+							<p class="mb-0">
+								Ser referente de trabajo, estilo y artesanía
+								con la historia que cuenta cada producto que
+								crean nuestras manos.
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<footer class="py-3">
+			<section id="slogan-2" class="py-5 mt-4 bg-pink">
+				<div class="container py-4">
+					<div class="row align-items-center">
+						<div class="col-7">
+							<h3 class="text-center mb-0">
+								Bohé se debe única y exclusivamente <br>
+								a la mujer moderna, clásica y actual, aquella <br>
+								que quiere vivir de forma libre y fresca</h3>	
+						</div>
+						<div class="col-5">
+							<div class="brand-box text-center">
+								<img src="images/boho-black.png" width="35%">
+							</div>
+						</div>
+					</div>	
+				</div>
+			</section>
 			<div class="container">
+				<div class="row">
+					<div class="col d-flex align-items-center p-2 justify-content-center">
+						<img src="images/look-book-2.jpg" width="60%">
+						<div class="mask"></div>
+					</div>
+					<div class="col d-flex align-items-center m-5 p-2 with-background">
+						<div>
+							<h3 class="text-brown">La libertad de ser bohemio</h3>
+							<p>
+								En ella reside el
+								artista, quien se aparta de las convenciones
+								sociales y privilegia el arte y la cultura por
+								sobre todas las cosas. nuestra marca al tener
+								arte, frescura y lo irreverente de este estilo,
+								combina el trabajo artesanal en accesorios
+								que van desde el romance, la fuerza, la
+								elegancia y la audacia hasta convertir lo
+								bohemio en algo simplemente bohé.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section id="slogan-2" class="py-5 mt-4">
+				<div class="container py-4">
+					<div class="row align-items-center">
+						<div class="col-2">
+							<img src="images/boho-flower.png" width="50%">
+						</div>
+						<div class="col-8">
+							<h3 class="text-center text-white mb-0">
+								Usamos distintos elementos y materiales que hacen <br>
+								del trabajo artesanal una auténtica obra de arte</h3>	
+						</div>
+						<div class="col-2">
+							<img src="images/boho-flower.png" width="50%">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="py-4 container how-do-we-do">
+				<div class="section-title text-center py-3">
+					<h3>¡Así lo hacemos!</h3>
+					<img src="images/brown-arrow.png" width="6%">
+					<div class="row pt-5">
+						<div class="col d-flex justify-content-center">
+							<div class="card w-50 bg-light">
+								<div class="card-header border-bottom-0">
+									<img src="images/paint.svg" width="65%">
+								</div>
+								<div class="card-footer p-0 border-top-0">
+									<h5>Colores vibrantes</h5>
+								</div>
+							</div>
+						</div>
+						<div class="col d-flex justify-content-center">
+							<div class="card w-50 bg-light">
+								<div class="card-header border-bottom-0">
+									<img src="images/cutting.svg" width="65%">
+								</div>
+								<div class="card-footer p-0 border-top-0">
+									<h5>Mano de obra artesanal</h5>
+								</div>
+							</div>
+						</div>
+						<div class="col d-flex justify-content-center">
+							<div class="card w-50 bg-light last">
+								<div class="card-header border-bottom-0">
+									<img src="images/africa.svg" width="100%">
+								</div>
+								<div class="card-footer p-0 border-top-0">
+									<h5>Estilo bohemio</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="bg-light">
+				<div class="container">
+					<div class="row">
+						<div class="col d-flex align-items-center p-2 justify-content-center">
+							<img src="images/boho-arrows.svg" width="40%">
+						</div>
+						<div class="col d-flex align-items-center m-5 p-2 with-background">
+							<div>
+								<h3 class="text-brown">¡Los detalles cuentan!</h3>
+								<p>
+									Cada pieza es una muestra de pasión, de
+									romanticismo y de una vibra positiva porque cada
+									material que la compone, tiene una historia,
+									tiene su razón de ser y todo mezclado hará que
+									la persona que las use sea capaz de mostrar el
+									atributo divino que significa ser mujer.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer class="container py-3">
 			<div class="row">
 				<div class="col">
-					<img src="images/logo_bohe.svg" width="15%">
+					<img src="images/logo_bohe.svg" width="15%" class="logo">
 				</div>
 				<div class="col-3 arrow">
-					<img src="images/arrow.png" width="40%">
+					<img src="images/arrow.png" width="40%" class="arrow">
 				</div>
 				<div class="col d-flex align-items-center justify-content-end">
 					<p class="mb-0 mr-4">Siguenos:</p>
@@ -237,7 +270,6 @@
 						</a>
 					</div>
 				</div>
-			</div>
 			</div>
 		</footer>
 	</body>
