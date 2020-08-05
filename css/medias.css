@@ -181,6 +181,42 @@
   .category-card img.arrow {
     bottom: -1.2rem;
   }
+  #about-view .details .row.text , #about-view .bohemian .row {
+    flex-direction: column;
+    margin: 0
+  }
+  #about-view .bohemian {
+    padding: 2rem 0;
+  }
+  #about-view .bohemian .row img{
+    width: 50%
+  }
+  #about-view .mask {
+    width: 55%;
+    height: 84%;
+    right: 27%;
+  }
+  #about-view .with-background {
+    margin: 0 !important;
+    margin-top: 3rem !important;
+  }
+
+  #slogan-2 h3 {
+    font-size: 1.8rem;
+  }
+
+  .how-do-we-do img.big {
+    width: 70%;
+  }
+  #about-view .how-do-we-do .mask {
+    width: 69%;
+    height: 98%;
+    top: 20%;
+    right: 22%;
+  }
+  #about-view .details .row.text {
+    flex-direction: column-reverse;
+  }
 }
 
 @media (max-width: 676px) {
@@ -217,10 +253,58 @@
     color: #C89567 !important;
   }
 }
-@media (max-width: 576px) { 
+@media (max-width: 576px) {
+  #about-view .vision {
+    flex-direction: column;
+  }
+  #about-view .vision .col, #about-view .bohemian .row .col {
+    margin: 0 !important;
+    padding: 2rem !important;
+  }
   #new-products .row, #categories .row, #related-products .row{
     padding: 0 1rem
   }
+
+  #about-view #slogan-2 .col-8 {
+    padding: 0 1.4rem;
+  }
+  #about-view .mask {
+    width: 49%;
+    height: 76%;
+    right: 29%;
+  }
+
+  #about-view .how-do-we-do .mask {
+    width: 71%;
+    height: 92%;
+    top: 17%;
+  }
+
+  img#paint{
+    width: 20%
+  }
+
+  img#cutting{
+    width: 50%
+  }
+
+  img#africa {
+    width: 28%
+  }
+
+  #about-view #slogan-2 .col-2:first-child {
+    display: none;
+  }
+
+  #about-view .how-do-we-do .row {
+    flex-direction: column;
+  }
+
+  #about-view .how-do-we-do .row .col {
+    padding: 1rem 0
+  }
+
+  #about-view 
   .product-card .only-price {
     display: none;
   }
@@ -311,8 +395,23 @@
   nav .cart-link img {
     width: 65%;
   }
+  img#paint {
+    width: 25%
+  }
+  img#africa {
+    width: 35%;
+  }
+  #about-view .row.text .row.h-100 {
+    padding: 1rem 5rem !important;
+    margin-bottom: 1rem;
+  }
 } 
 
+@media (max-width: 430px) { 
+  #about-view .row.text .row.h-100 {
+    padding: 1rem 2rem !important;
+  }
+}
 @media (max-width: 350px) { 
   #slogan-2 .brand-box span {
     display: none;
@@ -325,4 +424,14 @@
   nav .cart-link img {
     width: 80%;
   }
-} 
+  #about-view .row.text .row.h-100 {
+    padding: 1rem 1rem !important;
+  }
+}
+
+@media (max-width: 305px) { 
+  #about-view .row.text .row.h-100 {
+    padding: 1rem 0 !important;
+    text-align: center;
+  }
+}
