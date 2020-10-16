@@ -48,8 +48,14 @@ $(document).ready(function(){
 	});
 
 	let $menu = $('.menu-collapse')
+	let $blogMenu = $('.blog').find('.sidebar')
 	let $icon = $('.toggle-menu').find('i')
 	let $menuMask = $('.menu-mask')
+	let $cartMask = $('.cart-mask')
+	let $cart = $('.current-cart')
+	let $btnCart = $('.cart-link')
+	let $btnBlog = $('.blog-menu')
+	let $btnBlogMenuClose = $('.blog-close-menu')
 
 	let toggleMenu = () => {
 		$menu.toggleClass('open')
@@ -63,16 +69,39 @@ $(document).ready(function(){
 		}
 	}
 
-	// $(document).on('click','.toggle-menu',function(){
-	// 	toggleMenu()
- //  });
+	let toggleCart = () => {
+		$cart.toggleClass('open')
 
-	// $(document).on('click','.menu-mask',function(){
-	// 	toggleMenu()
-	// });
+		if ($cart.hasClass('open')) {
+			$cartMask.removeClass('d-none').css('z-index', '5')
+			$('body').css('overflow', 'hidden')
+		} else {
+			$cartMask.addClass('d-none')
+			$('body').css('overflow', 'auto').css('z-index', '4')
+		}
+		if ($menu.hasClass('open')) {
+			toggleMenu()
+		}
+	}
+
+	let toggleBlogMenu = () => {
+		$blogMenu.toggleClass('open')
+	}
 
 	$('.menu-mask, .toggle-menu').click(function () {
 		toggleMenu()
+	})
+
+	$btnBlog.click(function () {
+		toggleBlogMenu()
+	})
+
+	$btnBlogMenuClose.click(function () {
+		toggleBlogMenu()
+	})
+
+	$('.cart-mask, .cart-link, .close-cart').click(function () {
+		toggleCart()
 	})
 
 

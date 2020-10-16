@@ -5,6 +5,7 @@
 	  <meta content="text/html, charset=UTF-8" http-equiv="Content-Type">
 	  <meta content="width=device-width, user-scalable=no" name="viewport">
 		<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
 		<!-- Bootstrap styles -->
 		<!-- CSS only -->
@@ -61,7 +62,7 @@
 						</div>
 					</div>
 					<div class="w-30 text-right">
-						<a href="#" class="cart-link">
+						<a class="cart-link">
 							<img src="images/cart-icon.svg" width="20%">
 							<button class="bg-danger d-flex align-items-center justify-content-center">
 								<span>2</span>
@@ -100,6 +101,78 @@
 				</div>
 			</div>
 		</nav>
+		<div class="mask menu-mask d-none"></div>
+		<div class="mask cart-mask d-none"></div>
+		<div class="current-cart">
+			<div class="cart-header px-3 py-4 d-flex align-items-center justify-content-between border-bottom">
+				<h5 class="mb-0">MI CARRITO</h4>
+				<i class="fa fa-times close-cart"></i>
+			</div>
+			<div class="cart-products">
+				<div class="cart-product d-flex border-bottom py-3">
+					<img src="images/Fotoproducto-Bohe-2019-166.jpg" width="30%">
+					<div>
+						<h5>Brazalete Aroma Color</h5>
+						<div class="quantity my-3">
+	            <span class="minus border text-muted px-2 py-1">
+	              <i class="fa fa-minus"></i>
+	            </span>
+	            <input type="number" class="count text-center border-top border-bottom" name="qty" value="1" min="1">
+	            <span class="plus border text-muted px-2 py-1">
+	              <i class="fa fa-plus"></i>
+	            </span>
+	          </div>
+					</div>
+					<h5 class="font-weight-bold py-3">$8.00</h5>
+				</div>
+				<div class="cart-product d-flex border-bottom py-3">
+					<img src="images/Fotoproducto-Bohe-2019-166.jpg" width="30%">
+					<div>
+						<h5>Brazalete Aroma Color</h5>
+						<div class="quantity my-3">
+	            <span class="minus border text-muted px-2 py-1">
+	              <i class="fa fa-minus"></i>
+	            </span>
+	            <input type="number" class="count text-center border-top border-bottom" name="qty" value="1" min="1">
+	            <span class="plus border text-muted px-2 py-1">
+	              <i class="fa fa-plus"></i>
+	            </span>
+	          </div>
+					</div>
+					<h5 class="font-weight-bold py-3">$8.00</h5>
+				</div>
+				<div class="cart-product d-flex border-bottom py-3">
+					<img src="images/Fotoproducto-Bohe-2019-166.jpg" width="30%">
+					<div>
+						<h5>Brazalete Aroma Color</h5>
+						<div class="quantity my-3">
+	            <span class="minus border text-muted px-2 py-1">
+	              <i class="fa fa-minus"></i>
+	            </span>
+	            <input type="number" class="count text-center border-top border-bottom" name="qty" value="1" min="1">
+	            <span class="plus border text-muted px-2 py-1">
+	              <i class="fa fa-plus"></i>
+	            </span>
+	          </div>
+					</div>
+					<h5 class="font-weight-bold py-3">$8.00</h5>
+				</div>
+			</div>
+			<div class="subtotal border-top p-3 semi-bold">
+				<div class="d-flex align-items-center justify-content-between">
+					<p class="mb-2">Subtotal</p>
+					<h5 class="font-weight-bold">$40.00</h5>
+				</div>
+				<p>Los códigos de descuento, los costes de envío y los impuestos se añaden durante el pago.</p>
+				<div class="form-check">
+			    <input type="checkbox" class="form-check-input" id="terms">
+			    <label class="form-check-label" for="terms">Acepto los terminos y condiciones</label>
+			  </div>
+			  <button class="btn btn-primary rounded-0 w-50 mt-3 mx-auto">
+					<span class="ml-2">Finalizar pedido</span>
+				</button>
+			</div>
+		</div>
 		<div class="mask menu-mask d-none"></div>
 		<div class="banner">
 		  <div class="banner-item">
@@ -388,13 +461,15 @@
 				</button>
 			</a>
 		</section>
-		<section id="slogan" class="py-5 mt-4">
+		<section id="slogan" class="py-5 mt-4 background-arrow-images">
+			<img src="images/arrows.png" width="8%" class="background-arrow-images-left">
+			<img src="images/arrows.png" width="8%" class="background-arrow-images-right">
 			<div class="container text-center">
 				<div class="section-title text-center py-4">
-					<h3 class="text-white">Somos de Alma Libre</h3>
-					<img src="images/arrow-2-white.png" width="8%">
+					<h3 class="text-white mb-4">Somos de Alma Libre</h3>
+					<!-- <img src="images/arrow-2-white.png" width="8%"> -->
 				</div>
-				<div class="images left">
+				<!-- <div class="images left">
 					<img src="images/arrow-2-white.png" id="one" width="15%">
 					<img src="images/arrow-1-white.png" id="two" width="8%">
 					<img src="images/arrow-4.png" id="three" width="15%">
@@ -407,7 +482,7 @@
 					<img src="images/arrow-4.png" id="three" width="15%">
 					<img src="images/arrow-4.png" id="four" width="18%">
 					<img src="images/arrow-2-white.png" id="five" width="15%">
-				</div>
+				</div> -->
 			</div>
 		</section>
 		<section id="new-products" class="py-4 bg-light">
